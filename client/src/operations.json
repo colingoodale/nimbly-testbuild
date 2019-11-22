@@ -1,0 +1,77 @@
+[
+    {
+        "id": "1",
+        "text": "Simplify",
+        "value": "simplify"
+    },
+    {
+        "id": "2",
+        "text": "Factor",
+        "value": "factor"
+    },
+    {
+        "id": "3",
+        "text": "Derive",
+        "value": "derive"
+    },
+    {
+        "id": "4",
+        "text": "Integrate",
+        "value": "integrate"
+    },
+    {
+        "id": "5",
+        "text": "Find O's",
+        "value": "zeroes"
+    },
+    {
+        "id": "6",
+        "text": "Find Tangent",
+        "value": "tangent"
+    },
+    {
+        "id": "7",
+        "text": "Area Under Curve",
+        "value": "area"
+    },
+    {
+        "id": "8",
+        "text": "Cosine",
+        "value": "cos"
+    },
+    {
+        "id": "9",
+        "text": "Sine",
+        "value": "sin"
+    },
+    {
+        "id": "10",
+        "text": "Tangent",
+        "value": "tan"
+    },
+    {
+        "id": "11",
+        "text": "Inverse Cosine",
+        "value": "arccos"
+    },
+    {
+        "id": "12",
+        "text": "Inverse Sine",
+        "value": "arcsin"
+    },
+    {
+        "id": "13",
+        "text": "Inverse Tangent",
+        "value": "arctan"
+    },
+    {
+        "id": "14",
+        "text": "Absolute Value",
+        "value": "abs"
+    },
+    {
+        "id": "15",
+        "text": "Logarithm",
+        "value": "log"
+    }
+]
