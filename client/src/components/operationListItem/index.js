@@ -6,7 +6,7 @@ function operationListItem(props) {
         <li><div
             id={props.id}
             value={props.value}
-            onClick={() => props.hideDropdownMenu(props.value)}
+            onClick={() => props.hideDropdownMenu(props.value, props.text)}
             className="dropdown-button"
         >{props.text}</div></li>
     )
