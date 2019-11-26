@@ -633,6 +633,7 @@ button.is_active .success svg{
   font-size: 30px;
   margin-top: 25px;
   text-align: center;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.15);
 
   -webkit-transition: opacity 2s ease-in;
      -moz-transition: opacity 2s ease-in;
