@@ -1,11 +1,14 @@
 body{
-  background-color:gray;
+  background-color:rgb(156, 154, 154);
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: American Typewriter, serif;
+  color:white;
+  
   margin-top: 25px;
-  font-size: 21px;
+  font-size: 50px;
   text-align: center;
+  text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000,  4px 3px 0px #fff, 9px 8px 0px rgba(0,0,0,0.15);
 
   -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
      -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -243,11 +246,11 @@ li.dropdown-button {
   color:#FFFFFF;
   text-align:center;
   transition: all 0.2s;
-  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
-     -moz-animation: fadein 2s; /* Firefox < 16 */
-      -ms-animation: fadein 2s; /* Internet Explorer */
-       -o-animation: fadein 2s; /* Opera < 12.1 */
-          animation: fadein 2s;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+     -moz-animation: fadein 1s; /* Firefox < 16 */
+      -ms-animation: fadein 1s; /* Internet Explorer */
+       -o-animation: fadein 1s; /* Opera < 12.1 */
+          animation: fadein 1s;
 }
 
 @keyframes fadein {
