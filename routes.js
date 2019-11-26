@@ -8,7 +8,7 @@ router.get("/math/:operation/:expression", (req, res) => {
         console.log(math);
         return math;
     })
-    res.json(res.math);
+    res.json(math);
 })
 
 

@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import OperationListItem from "./components/operationListItem";
 import operations from './operations.json';
+import { bounce } from 'react-animations';
+import styled, { keyframes } from "styled-components";
 import './App.css';
 import axios from 'axios';
+const bounceAnimation = keyframes`${bounce}`;
 
+const BouncyDiv = styled.div`
+  animation: 2s ${bounceAnimation};
+`;
 
 class Dropdown extends Component {
   state = {
@@ -12,6 +18,7 @@ class Dropdown extends Component {
     currentValue: "simplify",
     expression: "",
     displayMenu: false,
+    newtonified: "Newtonified Expression"
   };
 
 
@@ -38,6 +45,19 @@ class Dropdown extends Component {
     });
     // console.log(this.state)
   };
+
+  handleSubmit = () => {
+    console.log('clicked')
+    let operation = this.state.currentValue;
+    let expression = this.state.expression;
+
+    axios.get("https://newton.now.sh/" + operation + "/" + expression).then((data) => {
+      console.log(data.data);
+      this.setState({ newtonified: data.data.result });
+      console.log(this.state.newtonified)
+    }
+    )
+  }
   render() {
     return (
       //General closing clicks for page, currently overriding button click
@@ -79,13 +99,20 @@ class Dropdown extends Component {
                 onChange={this.handleInputChange}
                 required
               />
-              <button id="submit">
+              <button id="submit" onClick={() => this.handleSubmit()}>
                 <span>Submit</span>
                 <div className="success">
                 </div>
               </button>
             </div>
           </div>
+        </div>
+        <div className="newtonified-container">
+          <BouncyDiv>
+            <h1 className="newtonified">
+              {this.state.newtonified}
+            </h1>
+          </BouncyDiv>
         </div>
       </div>
     );
