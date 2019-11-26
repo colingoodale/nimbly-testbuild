@@ -629,6 +629,7 @@ button.is_active .success svg{
 
 .newtonified {
   opacity: 0;
+  color: black;
   font-size: 30px;
   margin-top: 25px;
   text-align: center;
