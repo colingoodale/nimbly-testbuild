@@ -51,6 +51,7 @@ class Dropdown extends Component {
     let operation = this.state.currentValue;
     let expression = this.state.expression;
 
+
     axios.get("https://newton.now.sh/" + operation + "/" + expression).then((data) => {
       console.log(data.data);
       this.setState({ newtonified: data.data.result });
@@ -97,7 +98,6 @@ class Dropdown extends Component {
                 name="expression"
                 placeholder="Expression"
                 onChange={this.handleInputChange}
-                required
               />
               <button id="submit" onClick={() => this.handleSubmit()}>
                 <span>Submit</span>
