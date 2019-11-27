@@ -54,8 +54,13 @@ class Dropdown extends Component {
 
     axios.get("https://newton.now.sh/" + operation + "/" + expression).then((data) => {
       console.log(data.data);
-      this.setState({ newtonified: data.data.result });
-      console.log(this.state.newtonified)
+      if (data.data.result === undefined) {
+        this.setState({ newtonified: "Please try another equation" })
+      } else {
+        this.setState({ newtonified: data.data.result });
+      }
+
+      // console.log(this.state.newtonified)
     }
     )
   }
